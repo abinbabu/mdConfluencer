@@ -1,0 +1,7 @@
+services:
+  mdconfluence:
+    build: .
+    container_name: mdconfluence
+    ports:
+      - "8000:8000"
+    restart: unless-stopped

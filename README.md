@@ -16,7 +16,21 @@ This project uses `md2cf` rendering on the backend and provides a simple web UI 
 
 ## Quick Start
 
-### Option 1: One-click run (macOS)
+### Option 1: Docker (easiest for sharing)
+
+```bash
+docker compose up --build
+```
+
+Open [http://localhost:8000](http://localhost:8000).
+
+To stop:
+
+```bash
+docker compose down
+```
+
+### Option 2: One-click run (macOS)
 
 Double-click `run.command` in Finder.
 
@@ -27,7 +41,7 @@ cd /Users/abinbabu/Desktop/mdconverter
 ./run.command
 ```
 
-### Option 2: Manual run
+### Option 3: Manual run
 
 ```bash
 cd backend
@@ -64,6 +78,8 @@ pytest
 - `frontend/src/main.js` - UI logic and API calls
 - `frontend/styles.css` - UI styles
 - `run.command` - macOS one-click launcher
+- `Dockerfile` - container image for backend + frontend
+- `docker-compose.yml` - one-command local run
 
 ## Scope and Limitations
 
