@@ -16,7 +16,15 @@ This project uses `md2cf` rendering on the backend and provides a simple web UI 
 
 ## Quick Start
 
-### Option 1: Docker (easiest for sharing)
+### Option 1: One terminal command (no script warning)
+
+```bash
+cd backend && python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt && python app.py
+```
+
+Open [http://localhost:8000](http://localhost:8000).
+
+### Option 2: Docker (easiest for sharing)
 
 ```bash
 docker compose up --build
@@ -30,7 +38,7 @@ To stop:
 docker compose down
 ```
 
-### Option 2: One-click run (macOS)
+### Option 3: One-click run (macOS)
 
 Double-click `run.command` in Finder.
 
@@ -41,7 +49,7 @@ cd /Users/abinbabu/Desktop/mdconverter
 ./run.command
 ```
 
-### Option 3: Manual run
+### Option 4: Manual run
 
 ```bash
 cd backend
