@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markdown to Confluence Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Markdown to Confluence</h1>
+      <p class="subtitle">Paste or upload Markdown, then copy Confluence-ready output.</p>
+
+      <label for="markdownInput">Markdown input</label>
+      <textarea id="markdownInput" rows="14" placeholder="# Example title"></textarea>
+
+      <div class="toolbar">
+        <input id="fileInput" type="file" accept=".md,text/markdown,text/plain" />
+        <label><input id="stripTopHeader" type="checkbox" /> Strip first top header</label>
+        <label><input id="removeTextNewlines" type="checkbox" /> Remove text newlines</label>
+      </div>
+
+      <div class="toolbar">
+        <button id="convertBtn">Convert</button>
+        <button id="copyBtn">Copy output</button>
+        <button id="clearBtn" class="secondary">Clear</button>
+      </div>
+
+      <p id="status" class="status"></p>
+
+      <label for="outputBox">Confluence output</label>
+      <textarea id="outputBox" rows="14" readonly></textarea>
+
+      <label for="previewBox">Preview</label>
+      <div id="previewBox" class="preview"></div>
+    </main>
+
+    <script src="src/main.js"></script>
+  </body>
+</html>
